@@ -1,24 +1,38 @@
-import React from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
+// Reference: https://github.com/jdiabi/react-profile-card/tree/master
 
-const ProfileCard = () => {
-  return (
-    <Card style={{ width: '100%' }}>
-      <Card.Img variant="top" src="https://via.placeholder.com/150" />
-      <Card.Body>
-        <Card.Title>John Doe</Card.Title>
-        <Card.Text>
-          Age: 30 <br />
-          Location: New York
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Occupation: Developer</ListGroup.Item>
-        <ListGroup.Item>Email: john.doe@example.com</ListGroup.Item>
-        <ListGroup.Item>Phone: +1 234 567 890</ListGroup.Item>
-      </ListGroup>
-    </Card>
-  );
-};
+import React from "react";
+import "./ProfileCard.scss";
+import avatar from "../assets/images/profile.png"
+import { Box } from "@mui/material";
+
+function ProfileCard(props) {
+	return (
+    <Box sx={{ maxWidth: 400, margin: 'auto', padding: 2 }}>
+      <div className=".card-container">
+        <header>
+          <img className="profile-img"src={avatar} alt={props.name} />
+        </header>
+        <h1 className="bold-text">
+          {props.name} 
+        </h1>
+        <h2 className="normal-text">{props.title}</h2>
+        <div className="social-container">
+          <div className="followers">
+            <h1 className="bold-text">{props.followers}</h1>
+            <h2 className="smaller-text">Followers</h2>
+          </div>
+          <div className="likes">
+            <h1 className="bold-text">{props.views}</h1>
+            <h2 className="smaller-text">Views</h2>
+          </div>
+          <div className="photos">
+            <h1 className="bold-text">{props.photos}</h1>
+            <h2 className="smaller-text">Photos</h2>
+          </div>
+        </div>
+      </div>
+    </Box>
+	);
+}
 
 export default ProfileCard;

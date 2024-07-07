@@ -7,16 +7,23 @@ const Dashboard = () => {
   return (
     <Grid container spacing={2}>
       {/* First row */}
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={4}>
         {/* Profile Card Goes Here */}
         <Box sx={{ height: 300, border: '1px solid #ccc' }}>
-          <ProfileCard />
+          <ProfileCard
+            name="Chunyue Ma"
+            age="28"
+            title="Junior Software Engineer"
+            followers="1,106"
+            views="93"
+            photos="614"
+          ></ProfileCard>
         </Box>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={8}>
         {/* Heatmap Card Goes Here */}
         <Box sx={{ height: 300, border: '1px solid #ccc' }}>
-          <ProfileCard />
+          {/* <ProfileCard /> */}
         </Box>
       </Grid>
 
