@@ -1,10 +1,10 @@
-
+import AreaCard from "./AreaCard";
 import "./AreaCards.scss";
 
 const AreaCards = () => {
   return (
     <section className="content-area-cards">
-      {/* <AreaCard
+      <AreaCard
         colors={["#e4e8ef", "#475be8"]}
         percentFillValue={80}
         cardInfo={{
@@ -30,7 +30,7 @@ const AreaCards = () => {
           value: "$18.2K",
           text: "Available to payout",
         }}
-      /> */}
+      />
     </section>
   );
 };
