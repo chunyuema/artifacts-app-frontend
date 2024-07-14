@@ -5,7 +5,6 @@ import LogoBlue from "../../assets/images/logo_blue.svg";
 import LogoWhite from "../../assets/images/logo_white.svg";
 import {
   MdOutlineClose,
-  MdOutlineComputer,
   MdOutlineGridView,
   MdOutlineLogout,
   MdOutlineMessage,
@@ -13,6 +12,7 @@ import {
   MdOutlineSettings,
   MdOutlineShoppingBag,
 } from "react-icons/md";
+import { HiAcademicCap } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import "./Sidebar.scss";
 import { SidebarContext } from "../../context/SidebarContext";
@@ -72,13 +72,13 @@ const Sidebar = () => {
               </Link>
             </li>
 
-            {/* This section provides the learning paths of different skill sets */}
+            {/* This section provides information of other friends and their profile overviews */}
             <li className="menu-item">
               <Link to="/" className="menu-link">
                 <span className="menu-link-icon">
-                  <MdOutlineComputer size={20} />
+                  <HiAcademicCap size={20} />
                 </span>
-                <span className="menu-link-text">Dev Paths</span>
+                <span className="menu-link-text">Mentors</span>
               </Link>
             </li>
 
@@ -88,7 +88,7 @@ const Sidebar = () => {
                 <span className="menu-link-icon">
                   <MdOutlinePeople size={20} />
                 </span>
-                <span className="menu-link-text">Friends</span>
+                <span className="menu-link-text">Mentees</span>
               </Link>
             </li>
             
