@@ -52,7 +52,7 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <Box sx={{ padding: 2, overflowY: 'auto' }}>
+    <Box sx={{ padding: 2 }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
