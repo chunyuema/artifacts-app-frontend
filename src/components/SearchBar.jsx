@@ -14,7 +14,7 @@ function SearchBar() {
   return (
     <TextField
       variant="outlined"
-      placeholder="Search Dev Path..."
+      placeholder="My Dev Paths..."
       value={searchTerm}
       onChange={handleSearch}
       InputProps={{

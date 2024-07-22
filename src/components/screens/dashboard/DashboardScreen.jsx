@@ -12,10 +12,10 @@ const Dashboard = () => {
 
   return (
     <Grid container spacing={2}>
-      {/* First row */}
+
       <Grid item xs={12} md={6}>
         {/* Profile Card Goes Here */}
-        <Box sx={{ height: 300, border: '1px solid #ccc' }}>
+        <Box sx={{ height: 300 }}>
           <ProfileCard
             name="Chunyue Ma"
             age="28"
@@ -26,6 +26,8 @@ const Dashboard = () => {
           ></ProfileCard>
         </Box>
       </Grid>
+
+
       <Grid item xs={12} md={6}>
         {/* Skill Radar Chart Goes Here */}
         <Box sx={{ height: 300, border: '1px solid #ccc' }}>
